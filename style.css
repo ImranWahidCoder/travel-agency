@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #111;
+}
+section
+{
+    position: relative;
+    padding: 30px;
+}
+.header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header h2
+{
+    text-shadow: 5px 5px 5px black;
+}
+.header .logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.header .toggle img
+{
+    max-width: 40px;
+    cursor: pointer;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#111,transparent);
+}
+.banner .content
+{
+    position: relative;
+    max-width: 900px;
+    text-align: center;
+    z-index: 1;
+}
+.banner .content h2
+{
+    color: #fff;
+    font-size: 5em;
+    font-weight: bolder;
+    text-shadow: 10px 10px 10px black;
+}
+.banner .content p
+{
+    color: #fff;
+    font-size: 1.2em;
+}
+.btn
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.fitBg
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .contentBx
+{
+    min-width: 50%;
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+}
+.titleText
+{
+    font-weight: 600;
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.text
+{
+    color: #fff;
+    font-size: 1em;
+}
+.about .imgBx
+{
+    position: relative;
+    min-width: 50%;
+    width: 50%;
+    min-height: 500px;
+}
+.banner2 , .banner3 ,.banner4
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner2::before ,.banner3::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+    background: linear-gradient(to top,#111,transparent);
+}
+.banner4::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+    background: linear-gradient(to top,#111,transparent);
+}
+.banner2:after ,.banner3::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#111,transparent);
+}
+.banner4::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#111,transparent);
+}
+.destination
+{
+    text-align: center;
+}
+.destination .content
+{
+    text-align: center;
+}
+.destination .destinationList
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.destination .destinationList .box
+{
+    position: relative;
+    max-width: 550px;
+    width: 320px;
+    height: 500px;
+    background: #191919;
+    transition: 0.5s;
+    margin: 10px;
+    border-radius: 20px;
+}
+.destination .destinationList:hover .box
+{
+    opacity: 0.2;
+}
+.destination .destinationList .box:hover
+{
+    opacity: 1;
+}
+.destination .destinationList .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+.destination .destinationList .box .content
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.destination .destinationList .box .content h2
+{
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+.destination .destinationList .box .content h2 span
+{
+    font-size:0.8em;
+    font-weight: 300;
+    opacity: 0.5;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .sci
+{
+    position: relative;
+    display: flex;
+}
+.footer .sci li
+{
+    list-style: none;
+}
+.footer .sci li a
+{
+    text-decoration: none;
+    margin: 0 20px;
+}
+.footer .sci li a img
+{
+    filter: invert(1);
+    max-width: 40px;
+}
+.copyrightText
+{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    text-align: center;
+}
+.copyrightText a
+{
+    color: #fff;
+    text-decoration: none;
+}
+#features
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 285px;
+}
+.extra
+{
+    height: 700px;
+    border-radius: 30px;
+}
+#cardBody
+{
+    background-color: #282828;
+    color: #fff;
+}
+.subscribe
+{
+    padding: 100px 50px 100px 50px;
+    margin: 100px auto;
+    height: 600px;
+    color: #fff;
+}
+.faq button
+{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.subscribe form
+{
+    /* border: 1px solid wheat; */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.subscribe h1
+{
+    text-align: center;
+    margin: 20px;
+}
+.subscribe span
+{
+    color: rgb(241, 19, 19);
+    font-weight: bolder;
+}
+.subscribe hr
+{
+    color:white;
+}
+/* Making the website responsive */
+@media (max-width:767px)
+{
+    section
+    {
+        padding:40px;
+    }
+    .banner .content h2
+    {
+        font-size: 2.5em;
+    }
+    .banner .content p
+    {
+        font-size: 1em;
+    }
+    .about
+    {
+        flex-direction: column;
+    }
+    .about .contentBx, .about .imgBx
+    {
+        min-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 5px;
+    }
+    .about .imgBx
+    {
+        min-height: 250px;
+    }
+    .btn
+    {
+        margin-bottom: 30px;
+    }
+    .destination .destinationList .box
+    {
+        position: relative;
+        max-width: 350px;
+        min-width: initial;
+        width: 350px;
+        height: 400px;
+    }
+    .destination .destinationList .box .imgBx
+    {
+        height: 320px;
+    }
+    .destination .destinationList .box .content .dropdown a
+    {
+        height: 40px;
+        margin-top: 0;
+    }
+    .destination .destinationList .box .content h2
+    {
+        margin-bottom: 0;
+    }
+    .footer .sci li a img
+    {
+        max-width: 30px;
+    }
+    .subscribe
+    {
+        margin: 380px auto;
+    }
+}
